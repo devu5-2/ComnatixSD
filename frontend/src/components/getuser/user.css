@@ -1,0 +1,188 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+.userTable{
+    width: 60%;
+    background: transparent;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 50px;
+    
+    backdrop-filter: blur(900px);
+    overflow: hidden;
+}
+.backpic{
+    background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.addButton{
+   text-decoration: none;
+   background-color: rgba(34, 240, 34, 0.711);
+   color: white;
+   font-weight: 500;
+   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+   border-radius: 5px;
+   padding: 10px;
+}
+
+.userTable table{
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+
+.userTable table thead th{
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+}
+
+.userTable table tbody td{
+    padding: 10px;
+    text-align: center;
+}
+
+.actionButtons button{
+    border: 0;
+    outline: none;
+    background: red;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actionButtons a{
+    background: green;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.heading{
+    text-align: center;
+    border-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+.heading2{
+    text-align: center;
+    text-decoration: underline;
+}
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#statusFilter {
+    padding: 5px;
+    font-size: 14px;
+}
+ 
+/* react delete toast css */
+
+/* Container for the Toast */
+.confirmation-toast {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Message Text Style */
+  .toast-message {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Buttons container for confirmation */
+  .toast-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  /* General Button Style */
+  .toast-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Confirm Button Style */
+  .confirm-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .confirm-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Cancel Button Style */
+  .cancel-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e53935;
+    transform: scale(1.05);
+  }
+  
+  /* Toast Animation (fade-in) */
+  .react-toast-container .toast-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .react-toast-container .toast-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+  
+  .react-toast-container .toast-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .react-toast-container .toast-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+  
+  /* Positioning for the Toast */
+  .react-toast-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+  
